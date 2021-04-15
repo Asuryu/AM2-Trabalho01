@@ -1,18 +1,19 @@
 function [yh yp y] = solveODEL2(p,b)
+
 %SOLVEODEL2  Resolver Equações Diferenciais Lineares de Ordem 2 Completa
 %   Aplicando o Método da Variação das Constantes Arbitrárias
 %   a2*y''+a1*y'+a0*y = b(x)  
-%
+
 %INPUT:
 %   p - Vector com os Coeficientes da Equação Característica p=[a2 a1 a0]
 %   b - Vector coluna com os termos independentes do Sistema de Lagrange 
 %       b=[0; b(x)/a2] 
-%    
+ 
 %OUTPUT: 
 %   yh - Solução geral da Equação Homogénea Correspondente a2*y''+a1*y'+a0*y = 0 
 %   yp - Uma solução particular da ED Completa 
 %   y - Solução Geral da Equação Diferencial y = yh + yp
-%
+
 %CHAMADA da função na linha de comandos
 %   syms x  declarar x como variável simbólica
 %   [yh yp y] = solveODEL2([a2 a1 a0],[0; b(x)])
