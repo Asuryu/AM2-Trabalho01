@@ -19,11 +19,15 @@ function y = MEulerMelhorado(f,a,b,n,y0)
 %   15/04/2021  Francisco Mendes  a2020143982@isec.pt
 
 h = (b-a)/n; %Amplitude de cada subintervalo
+
 t = a:h:b; %Criar vetor que vai de "a" a "b" com step de "h"
 y = zeros(1,n+1); %Alocamento de memória
+
 y(1) = y0; %Definir o primeiro elemento do vetor
+
 for i =1:n %Aplicar o Método de Euler (iteração)
     y(i+1) = y(i)+h*f(t(i),y(i));
 end
+
 end
 

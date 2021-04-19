@@ -19,13 +19,17 @@ function y = MEuler(f,a,b,n,y0)
 %   15/04/2021  Francisco Mendes  a2020143982@isec.pt
 
 h = (b-a)/n; %Amplitude de cada subintervalo
+
 t = zeros(1, n+1); %Alocação de Memória
 y = zeros(1, n+1); %Alocação de Memória
+
 t(1) = a; %Definir o primeiro elemento do array
 y(1) = y0; %Definir o primeiro elemento do array
+
 for i =1:n %Aplicar o Método de Euler (iteração)
     y(i+1) = y(i)+h*f(t(i),y(i));
     t(i+1) = t(i)+h;
 end
+
 end
 
