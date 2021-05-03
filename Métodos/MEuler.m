@@ -13,7 +13,6 @@ function y = MEuler(f,a,b,n,y0)
 %OUTPUT:
 %   y - vetor das soluções aproximadas do PVI em cada um dos t(i)
 
-%   26/03/2021  Arménio Correia  armenioc@isec.pt
 %   15/04/2021  Tomás Silva  a2020143845@isec.pt
 %   15/04/2021  Tomás Pinto  a2020144067@isec.pt
 %   15/04/2021  Francisco Mendes  a2020143982@isec.pt
